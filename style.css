@@ -1,0 +1,147 @@
+body,html{
+	height: 100%;
+	margin: 0;
+}
+
+#landing{
+	background-color: #480B65;
+	height: 100%;
+	text-align: center;
+}
+#navbar ul{
+	list-style-type: none;
+	text-align: right;
+	padding: 0 20px;
+	margin: 0;
+}
+#navbar li{
+	font-family: "Segoe UI";
+	color: white;
+	display: inline-block;
+	padding: 10px 20px;
+}
+#loop_logo{
+	padding-top: 150px;
+	height: 150px;
+}
+.about{
+	color: #480B65;
+	font-size: 1.1em;
+	font-family: "Segoe UI";
+	text-align: center;
+}
+
+@media(min-width: 600px){
+	.about{
+		padding: 30px 150px;
+	}
+	.subsystem h1 , .teams h1{
+		font-size: 1.8em;
+	}
+	.flex-item{
+		width: 20%;
+		padding: 40px;	 
+	}
+
+	.team-container{
+		margin: 0 20%;
+	}
+	.member-item{
+		padding: 10px 30px;
+		margin: 0 10px;
+	}	
+	.member-item img{
+		height:  120px;
+	}
+	.post{
+		font-size: 0.9em;
+	}
+}
+
+
+@media(max-width: 599px){
+	.about{
+		padding: 30px 50px;
+	}
+	.subsystem h1 , .teams h1{
+		font-size: 1.5em;
+	}
+	.flex-item{
+		width: 60%;
+		padding: 30px;	 
+	}	
+	.member-item{
+		padding: 10px 10px;
+		margin: 0 10px;
+	}	
+	.member-item img{
+		height:  80px;
+	}
+	.post{
+		font-size: 0.8em;
+	}
+}
+
+.subsystem h1 , .teams h1{
+	font-family: Helvetica;
+	text-align: center;
+	color: #480B65;
+}
+
+
+.flex-container{
+	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-item h2{
+	font-family: "Segoe UI";
+	text-align: center;
+	color: #480B65;
+}
+
+.flex-item{
+	color: #480B65;
+	text-align: center;
+	font-family: "Segoe UI";
+	margin:  30px 0 ;
+	background-color: #F0DEF8;
+	box-shadow: 20px 20px 20px rgba(58,0,81,0.17); 
+}
+
+.team-container{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.member-item,.sponsor-item{
+		text-align: center;
+}
+.member-item img{
+	border-radius: 50%;
+}
+
+.member-item span, .sponsor-item span{
+	display: block;
+	color: #480B65;
+	padding: 5px 0;
+}
+.name{
+	font-family: Helvetica;
+}
+.post{
+	font-family: Roboto;
+	font-style: italic;
+}
+.sponsors-desc{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.sponsor-item img{
+	height:  180px;
+}
+.sponsor-item{
+	padding: 10px 60px;
+}

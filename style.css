@@ -20,10 +20,15 @@ body,html{
 	display: inline-block;
 	padding: 10px 20px;
 }
-#loop_logo{
-	padding-top: 150px;
-	height: 150px;
+
+#typewrite{
+	font-family: 'Gotham';
+	color: rgba(256,256,256,0.5);
+	/*font-weight: bold;*/
+	padding: 30px 10px;
+	display: block;
 }
+
 .about{
 	color: #480B65;
 	font-size: 1.1em;
@@ -32,11 +37,14 @@ body,html{
 }
 
 @media(min-width: 600px){
+	#landing-logo{
+		padding-top: 150px;
+	}
 	.about{
 		padding: 30px 150px;
 	}
 	.subsystem h1 , .teams h1{
-		font-size: 1.8em;
+		font-size: 2.5em;
 	}
 	.flex-item{
 		width: 20%;
@@ -56,19 +64,65 @@ body,html{
 	.post{
 		font-size: 0.9em;
 	}
+	.mobile-nav{
+		display: none;
+	}
+	#typewrite{
+		font-size: 4em;
+	}
+	#loop_logo{
+		height: 150px;
+	}
 }
 
 
 @media(max-width: 599px){
+
+	.drop-item{
+		color: white;
+		text-align: center;
+		font-family: Helvetica;
+		padding: 10px 0; 
+		background-color: #64506e;
+		font-weight: bold;
+		font-size: 0.8em;
+	}
+	a{
+		text-decoration: none;
+	}
+	#dropdown{
+		z-index: 10;
+		display: none;
+	}
+	.nav-header{
+		text-align: right;
+				height: 30px;
+	}
+	.mobile-nav img{
+		height: 30px;
+		padding-right: 10px; 
+	}
+	#loop_logo{
+		height: 90px;
+	}
+	#landing-logo{
+		padding-top: 35%;
+	}
+	#typewrite{
+		font-size: 2em;
+	}
+	#navbar{
+		display: none;
+	}
 	.about{
-		padding: 30px 50px;
+		padding: 30px 25px;
 	}
 	.subsystem h1 , .teams h1{
 		font-size: 1.5em;
 	}
 	.flex-item{
-		width: 60%;
-		padding: 30px;	 
+		width: 75%;
+		padding: 30px 5%;	 
 	}	
 	.member-item{
 		padding: 10px 10px;
@@ -106,7 +160,7 @@ body,html{
 	font-family: "Segoe UI";
 	margin:  30px 0 ;
 	background-color: #F0DEF8;
-	box-shadow: 20px 20px 20px rgba(58,0,81,0.17); 
+	box-shadow: 20px 20px 20px rgba(58,0,81,0.1); 
 }
 
 .team-container{

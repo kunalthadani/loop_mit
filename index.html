@@ -3,8 +3,20 @@
 <head>
 	<title>LoopMIT</title>
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+	<div class = "mobile-nav">
+		<div class =  "nav-header">
+			<a ><img id = "dropper" src = "resources/hamburger.png"></a>
+		</div>
+		<div id = "dropdown">
+			<a href = "#about"><div class = "drop-item">ABOUT US</div></a>
+			<a href = "#subsystem"><div class = "drop-item">SUBSYSTEMS</div></a>
+			<a href = "#teams"><div class = "drop-item">OUR TEAM</div></a>
+			<a href = "#sponsors"><div class = "drop-item">SPONSORS</div></a>	
+		</div>
+	</div>
 	<div id = "landing">
 		<div id = "navbar">
 			<ul>
@@ -14,13 +26,16 @@
 				<a href = "#sponsors"><li>Sponsors</li></a>
 			</ul>
 		</div>
-		<img src = "loopMIT.png" id = "loop_logo">
+		<div id = "landing-logo">
+			<img src = "loopMIT.png" id = "loop_logo">
+			<span id = "typewrite"></span>
+		</div>
 	</div>
 	<section class = "about" id = "about">
 		Genesis is a three day long event comprising of workshops conducted by experienced industry people as well as accomplished seniors in the college targeted towards the members of IECSE, the official computer science club of MIT Manipal. The aim of this event is to introduce various fields of computer science to students of all fields and hence uplift the technical culture of the college		
 	</section>
 	<section class = "subsystem" id = "subsystem">
-		<h1>OUR SUBSYSTEMS</h1>
+		<h1>SUBSYSTEMS</h1>
 		<div class = "flex-container">
 			<div class ="flex-item">
 				<h2>COMPOSITES</h2>
@@ -53,7 +68,7 @@
 		</div>
 	</section>
 	<section class = "teams" id = "teams">
-		<h1>OUR TEAMS</h1>
+		<h1>OUR TEAM</h1>
 		<div class = "team-container">
 			<div class = "member-item">
 				<img src="resources/jash.png">
@@ -93,7 +108,7 @@
 		</div>
 	</section>
 	<section class = "teams" id = "sponsors">
-		<h1>OUR SPONSORS</h1>
+		<h1>SPONSORS</h1>
 		<div class = "team-container">
 			<div class = "sponsor-item">
 				<img src="resources/mahe.jpg">

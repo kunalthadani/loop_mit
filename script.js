@@ -10,8 +10,14 @@ document.addEventListener('DOMContentLoaded',function () {
 			i++;
 			setTimeout(dp,200);
 		}
+		else if(i == txt.length){
+			loop_txt.innerHTML = "";
+			i = 0;
+			setTimeout(dp,200);
+		}
 	}
 	dp();
+	
 	console.log('yes');
 	document.querySelector('#dropper').onclick = function(){
 		console.log("OK");

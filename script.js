@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded',function () {
 		i = 0;
 		loop_txt.innerHTML = "";
 		dp();
-	},10000);
+	},4000);
 	
 	console.log('yes');
 	document.querySelector('#dropper').onclick = function(){

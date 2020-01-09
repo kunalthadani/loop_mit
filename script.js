@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',function () {
 		
 		if(i < txt.length){
 			loop_txt.innerHTML = loop_txt.innerHTML + txt.charAt(i);
-			console.log('Hello');
+
 			i++;
 			setTimeout(dp,200);
 		}
@@ -35,4 +35,12 @@ document.addEventListener('DOMContentLoaded',function () {
 			document.querySelector('#dropdown').style.display = 'block';
 		}
 	}
+	document.querySelectorAll('.flex-item').forEach(function(x){
+		x.onmouseover = function(){
+			x.querySelector('.info').style.display = 'inline-block';
+		}
+		x.onmouseout = function(){
+			x.querySelector('.info').style.display = 'none';
+		}
+	});
 });

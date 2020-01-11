@@ -4,7 +4,8 @@ body,html{
 }
 
 #landing{
-	background-color: #480B65;
+	background-image: url("resources/back.png");
+	background-size: cover; 
 	height: 100%;
 	text-align: center;
 }
@@ -23,7 +24,7 @@ body,html{
 
 #typewrite{
 	font-family: Gotham,'Raleway',Sans-serif;
-	color: rgba(256,256,256,0.5);
+	color: rgba(256,256,256,0.8);
 	/*font-weight: bold;*/
 	padding: 30px 10px;
 	display: block;

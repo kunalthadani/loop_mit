@@ -4,8 +4,6 @@ body,html{
 }
 
 #landing{
-	background-image: url("resources/back.png");
-	background-size: cover; 
 	height: 100%;
 	text-align: center;
 }
@@ -38,6 +36,10 @@ body,html{
 }
 
 @media(min-width: 600px){
+	#landing{
+		background-image: url("resources/back.png");
+		background-size: cover; 
+	}
 	#landing-logo{
 		padding-top: 150px;
 	}
@@ -79,7 +81,10 @@ body,html{
 
 
 @media(max-width: 599px){
-
+	#landing{
+		background-image: url("resources/back-mob.png");
+		background-size: cover; 
+	}
 	.drop-item{
 		color: white;
 		text-align: center;

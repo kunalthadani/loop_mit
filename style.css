@@ -20,12 +20,28 @@ body,html{
 	padding: 10px 20px;
 }
 
-#typewrite{
+.type{
 	font-family: Gotham,'Raleway',Sans-serif;
 	color: rgba(256,256,256,0.8);
-	/*font-weight: bold;*/
 	padding: 30px 10px;
-	display: block;
+}
+@keyframes blink{
+	0%{
+		opacity: 1;
+	}
+	60%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.cursor{
+	animation-name: blink;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+	font-weight: lighter;
 }
 
 .about{
@@ -55,7 +71,7 @@ body,html{
 	}
 
 	.team-container{
-		margin: 0 20%;
+		margin: 0 15%;
 	}
 	.member-item{
 		padding: 10px 30px;
@@ -70,7 +86,7 @@ body,html{
 	.mobile-nav{
 		display: none;
 	}
-	#typewrite{
+	.type{
 		font-size: 4em;
 	}
 	#loop_logo{
@@ -114,7 +130,7 @@ body,html{
 	#landing-logo{
 		padding-top: 35%;
 	}
-	#typewrite{
+	.type{
 		font-size: 2em;
 	}
 	#navbar{
@@ -212,21 +228,21 @@ body,html{
 	display: inline-block;
 }
 .aerodynamics{
-	background-image: url('resources/aerodynamics.png');
+	background-image: url('resources/aerodynamics2.png');
 }
 .levitation{
-	background-image: url('resources/levitation.png');
+	background-image: url('resources/levitation2.png');
 }
 .management{
-	background-image: url('resources/management.png');	
+	background-image: url('resources/management2.png');	
 }
 .electronics{
-	background-image: url('resources/electronics.png');	
+	background-image: url('resources/electronics2.png');	
 }
 .composites{
-	background-image: url('resources/composites.png');
+	background-image: url('resources/composites2.png');
 }
 .team-mem{
-	list-style-type: none;
+	/*list-style-type: none;*/
 	display: none;
 }

@@ -11,11 +11,6 @@ document.addEventListener('DOMContentLoaded',function () {
 			i++;
 			setTimeout(dp,200);
 		}
-		/*else if(i == txt.length){
-			loop_txt.innerHTML = "";
-			i = 0;
-			setTimeout(dp,200);
-		}*/
 	}
 	i = 0;
 	dp();
@@ -37,10 +32,12 @@ document.addEventListener('DOMContentLoaded',function () {
 	}
 	document.querySelectorAll('.flex-item').forEach(function(x){
 		x.onmouseover = function(){
-			x.querySelector('.info').style.display = 'inline-block';
+			x.querySelector('.info').style.display = 'none';
+			x.querySelector('.team-mem').style.display  = "block";			
 		}
 		x.onmouseout = function(){
-			x.querySelector('.info').style.display = 'none';
+			x.querySelector('.info').style.display = 'inline-block';
+			x.querySelector('.team-mem').style.display  = "none";
 		}
 	});
 });

@@ -52,7 +52,6 @@ body,html{
 	.flex-item{
 		width: 20%;
 		padding: 40px;	 
-		min-height: 300px;
 	}
 
 	.team-container{
@@ -103,7 +102,7 @@ body,html{
 	}
 	.nav-header{
 		text-align: right;
-				height: 30px;
+		height: 30px;
 	}
 	.mobile-nav img{
 		height: 30px;
@@ -136,7 +135,7 @@ body,html{
 		margin: 0 10px;
 	}	
 	.member-item img{
-		height:  80px;
+		height:  100px;
 	}
 	.post{
 		font-size: 0.8em;
@@ -166,10 +165,13 @@ body,html{
 	text-align: center;
 	font-family: "Segoe UI";
 	margin:  30px 0 ;
-	background-color: #F0DEF8;
+	background-size:cover;  
 	box-shadow: 20px 20px 20px rgba(58,0,81,0.1); 
+	min-height: 300px;
 }
-
+.flex-item:hover{
+	cursor: pointer;
+}
 .team-container{
 	justify-content: center;
 	display: flex;
@@ -201,11 +203,26 @@ body,html{
 	font-weight: bold;
 }
 .sponsor-item img{
-	height:  180px;
+	height:  120px;
 }
 .sponsor-item{
 	padding: 10px 60px;
 }
 .info{
 	display: none;
+}
+.aerodynamics{
+	background-image: url('resources/aerodynamics.png');
+}
+.levitation{
+	background-image: url('resources/levitation.png');
+}
+.management{
+	background-image: url('resources/management.png');	
+}
+.electronics{
+	background-image: url('resources/electronics.png');	
+}
+.composites{
+	background-image: url('resources/composites.png');
 }

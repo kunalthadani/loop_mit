@@ -103,12 +103,15 @@ body,html{
 
 
 @media(max-width: 599px){
+	.bot-logo{
+		padding-top: 150px;
+	}
 	.sponsor-item img{
 		max-width: 70%;
 	}
 	.bottom{
-		height: 70%;
-		padding-top: 30%;
+		height: 100%;
+		/*padding-top: 30%;*/
 	}
 	#landing{
 		background-image: url("resources/back-mob.png");
@@ -269,7 +272,7 @@ body,html{
 	text-align: center;
 }
 .bot-logo{
-	height: 120px;
+	height: 120px; 
 	padding-bottom: 25px; 
 }
 .bottom{

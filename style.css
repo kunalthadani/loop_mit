@@ -14,7 +14,7 @@ body,html{
 	margin: 0;
 }
 #navbar li{
-	font-family: "Segoe UI";
+	font-family: "Segoe UI",'Roboto', Sans-serif;;
 	color: white;
 	display: inline-block;
 	padding: 10px 20px;
@@ -47,11 +47,14 @@ body,html{
 .about{
 	color: #480B65;
 	font-size: 1.1em;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI",'Roboto', Sans-serif;;
 	text-align: center;
 }
 
 @media(min-width: 600px){
+	.sponsor-item img{
+		height:  120px;
+	}
 	#landing{
 		background-image: url("resources/back.png");
 		background-size: cover; 
@@ -92,10 +95,21 @@ body,html{
 	#loop_logo{
 		height: 150px;
 	}
+	.bottom{
+		height: 300px;
+		padding-top: 50px;
+	}
 }
 
 
 @media(max-width: 599px){
+	.sponsor-item img{
+		max-width: 70%;
+	}
+	.bottom{
+		height: 70%;
+		padding-top: 30%;
+	}
 	#landing{
 		background-image: url("resources/back-mob.png");
 		background-size: cover; 
@@ -103,7 +117,7 @@ body,html{
 	.drop-item{
 		color: white;
 		text-align: center;
-		font-family: Helvetica;
+		font-family: Helvetica,'Roboto', Sans-serif;;
 		padding: 10px 0; 
 		background-color: #64506e;
 		font-weight: bold;
@@ -159,7 +173,7 @@ body,html{
 }
 
 .subsystem h1 , .teams h1{
-	font-family: Helvetica;
+	font-family: 'Roboto', Sans-serif;;
 	text-align: center;
 	color: #480B65;
 }
@@ -171,7 +185,7 @@ body,html{
 	flex-wrap: wrap;
 }
 .flex-item h2{
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", 'Roboto', Sans-serif;;
 	/*text-align: center;*/
 	color: #480B65;
 }
@@ -208,19 +222,17 @@ body,html{
 	padding: 5px 0;
 }
 .name{
-	font-family: Helvetica;
+	font-family: Helvetica , 'Roboto', Sans-serif;;
 }
 .post{
-	font-family: Roboto;
+	font-family: 'Roboto', Sans-serif;;
 	font-style: italic;
 }
 .sponsors-desc{
 	font-size: 1.2em;
 	font-weight: bold;
 }
-.sponsor-item img{
-	height:  120px;
-}
+
 .sponsor-item{
 	padding: 10px 60px;
 }
@@ -242,6 +254,9 @@ body,html{
 .composites{
 	background-image: url('resources/composites2.png');
 }
+.vehicle-dynamics{
+	background-image: url('resources/vehicle-dynamics.png');
+}
 .team-mem{
 	/*list-style-type: none;*/
 	display: none;
@@ -254,12 +269,10 @@ body,html{
 	text-align: center;
 }
 .bot-logo{
-	height: 150px;
+	height: 120px;
 	padding-bottom: 25px; 
 }
 .bottom{
 	text-align: center;
-	height: 300px;
-	padding-top: 50px;
-	background-color: black;
+	background-color: #64506e;
 }
